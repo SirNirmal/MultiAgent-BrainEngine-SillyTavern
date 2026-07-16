@@ -63,7 +63,7 @@ Our script replicates this exact biological sequence:
 While Agents 2, 3, and 4 are all influenced by the Somatic core (A1), **they are kept completely blind to each other's thoughts.** 
 
 In a standard single-prompt LLM, different cognitive domains contaminate each other because the AI is forced to write them in a single, continuous stream of text. 
-*   If the AI starts its thought process by writing about its daily schedule (DMN), those words mathematically bias its neural network, warping its subsequent analysis of the user's hidden lies (Theory of Mind). 
+*   If the AI starts its thought process by writing about its daily schedule (DMN), those words mathematically bias its neural network, warping its subsequent process. 
 *   By separating these domains into isolated streams, the **DMN** can worry about its chores, the **Theory of Mind** can analyze social vulnerabilities, and the **Neurochemical Engine** can calculate ego and drives. They all feel the somatic tension (A1), but they process it in their own specialized domains without polluting one another.
 
 #### 3. Simulating True Cognitive Dissonance
@@ -71,12 +71,12 @@ Because Agents 2, 3, and 4 process the scene independently, they often produce h
 
 Standard LLMs hate contradiction; they are trained to write cohesive, agreeable paragraphs and will always try to "smooth out" these differences. 
 
-By keeping the subconscious agents isolated, we force the AI to generate raw, uncooperative, and highly contradictory data. When Agent 5 (the Executive) gathers this data, it is forced to resolve actual **cognitive dissonance**—making a messy, deeply human decision between competing internal voices.
+By keeping the subconscious agents isolated, we force the AI to generate raw, uncooperative and highly contradictory data. When Agent 5 (the Executive) gathers this data, it is forced to resolve actual **cognitive dissonance**—making a messy, deeply human decision between competing internal voices.
 
 #### 4. Enforcing the "Show, Don't Tell" Firewall
-If a single LLM writes both the character's internal thoughts and their external dialogue in one pass, the thoughts will inevitably "bleed" into the dialogue. The character will start acting exactly like they feel, destroying all subtext and conversational masking. 
+If a single LLM writes both the character's internal thoughts and their external dialogue in one pass, the thoughts will inevitably "bleed" into the dialogue. The character will start acting exactly like they feel, destroying any subtext or masking.
 
-To prevent this, **Agent 6 (the Writer) is kept 100% blind to the thoughts of Agents 1-4.** It only receives the final, physical choreography and dialogue dictated by Agent 5. This strict firewall forces the AI to act like a real movie camera—describing only literal, physical reality and forcing the emotional subtext to be shown, not told.
+To prevent this, **Agent 6 (the Writer) is kept 100% blind to the thoughts of Agents 1-4.** It only receives the final, physical choreography and dialogue dictated by Agent 5 (The Executive Functions). This strict firewall forces the AI to act like a real movie camera—describing only literal, physical reality and forcing the emotional subtext to be shown, not told.
 
 ---
 
