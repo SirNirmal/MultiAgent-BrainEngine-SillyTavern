@@ -1,4 +1,4 @@
-**[CLICK TO DOWNLOAD MultiAgent BrainEngine](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/archive/refs/heads/main.zip) - Read [How to Install & Use](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/blob/main/README.md#how-to-install--use)**
+**[CLICK TO DOWNLOAD MultiAgent BrainEngine](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/archive/refs/heads/main.zip) - Read [How to Install & Use](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/tree/main#how-to-install--use)**
 # MultiAgent-BrainEngine-SillyTavern
 
 ### Stop roleplaying with puppets. Give them a mind and a life.
