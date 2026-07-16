@@ -6,13 +6,13 @@ If you’ve spent any time doing AI roleplay, you’ve probably noticed what I c
 
 I wanted to change that. 
 
-This project is a Python proxy server that intercepts SillyTavern's prompts and routes them through a 6-agent brain simulation. It divides the character's cognition into two equally important halves: a deep, messy internal world, and an active life outside of your conversation.
+This project is a Python proxy server that intercepts SillyTavern's prompts and routes them through a 6-agent brain simulation. It divides the character's cognition into two equally important halves: a deep, messy internal world and an active life outside of your conversation.
 
 #### Part 1: A deep internal world (The Brain)
 Real humans don't just process text; we process experience. Before the character decides what to say, the simulation routes the prompt through their subconscious:
 *   **The Somatic Core:** Calculates their body's physical reflexes first (heart rate, muscle tension, tensing up) because human biology reacts before the conscious mind does.
 *   **The Neurochemical Engine:** Tracks their ego (serotonin), goals (dopamine), and bonding (oxytocin).
-*   **Core Schemas:** Filters your words through their past traumas, worldviews, and memories.
+*   **Core Schemas:** Filters your words through their past traumas, worldviews and memories.
 *   **Theory of Mind:** Actively reads between the lines, trying to figure out your hidden subtext and vulnerabilities instead of just taking your words at face value.
 
 #### Part 2: An active life outside the scene (The Routine)
