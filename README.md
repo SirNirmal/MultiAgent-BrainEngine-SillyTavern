@@ -42,7 +42,7 @@ This breaks the usual AI sycophancy. The characters don't exist just to cater to
     *   Click the **Advanced Formatting** tab (the "A" icon on the top menu bar).
     *   Find the **Reasoning** section and turn on **"Add to prompt"**.
     *   Set the **"Max number of thinking blocks to add"** to a high number (eg. 100). 
-    *   *Why?* The Python backend is hardcoded to parse the last 3 thoughts of the active character. Setting this to 3 in SillyTavern prevents unnecessary token overhead while allowing the memory engine to function.
+    *   *Why?* The Python backend is hardcoded to parse the last 3 thoughts of the active character. Setting this to a high value in SillyTavern allow the memory engine to function. The script will aumatically remove all words that don't belong to the preivous 3 thoughts of the character in the chat, so no worry about token consumption here.
 
 ---
 
