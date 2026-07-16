@@ -48,27 +48,35 @@ This breaks the usual AI sycophancy. The characters don't exist just to cater to
 
 ## 💸 Why use 6 agents?
 
-Running six separate API calls per turn is undeniably expensive. If you are roleplaying with a long chat history, this architecture will cost you six times more in API credits than a standard single-prompt setup. 
+Running six separate API calls per turn is expensive. If you are roleplaying with a long chat history, this architecture will cost you significantly more in API tokens than a standard single-prompt setup. 
 
-However, standard LLM roleplay suffers from three fundamental architectural flaws that **cannot be fixed within a single prompt**, no matter how clever the system instructions are. Here is why the cost is justified, and how this multi-agent system accurately mimics human neurology:
+However, standard LLM roleplay suffers from three fundamental architectural flaws that cannot be fixed within a single linear prompt:
 
-### 1. The "Linear contamination" problem (parallel vs sequential processing)
-When a single LLM does all its thinking in one linear text block (like a standard `<think>` block), early tokens inescapably bias later tokens. If a character is insulted and the AI writes, *"I am furious and humiliated"* in the first sentence of its thought process, the entire rest of its cognitive analysis is warped. It can no longer objectively analyze the user's hidden insecurities (Theory of Mind) or its own values and  long-term goals, because the neural network has locked onto "anger" as the dominant context.
+#### 1. Replicating the True Neurological Cascade
+In the human brain, cognitive processing is a cascade, not a straight line. Before you consciously "think," your autonomic nervous system reacts. 
 
-The human brain does not process reality in a straight, linear line. When you are threatened, your amygdala (fear/anger), your medial prefrontal cortex (Theory of Mind/intent) and your default mode network (background anxieties) fire *simultaneously* in parallel circuits. 
-By separating the subconscious into independent agents, we prevent LLM cross-contamination. The Somatic core can scream, *"My heart is pounding in terror,"* while the Theory of Mind engine coolly calculates, *"The user is only posturing out of insecurity,"* without one overriding the other.
+Our script replicates this exact biological sequence:
+1.  **The Amygdala (Agent 1) fires first and fast.** It reads the scene and determines raw physical arousal (heart rate, tensing, breathing). 
+2.  **The Subconscious Channels (Agents 2, 3, and 4) receive this physical context.** Just like a real human, their thoughts are *colored* by their physical arousal (e.g., high arousal tenses their Theory of Mind and makes their DMN more anxious). 
 
-### 2. Simulating True Cognitive Dissonance
-Real humans are messy, contradictory and constantly at war with themselves. We want to run away but our pride anchors us to the floor. We harbor deep resentment, but we desperately crave the other person's validation.
+#### 2. Preventing "Domain Contamination"
+While Agents 2, 3, and 4 are all influenced by the Somatic core (A1), **they are kept completely blind to each other's thoughts.** 
 
-Cognitive dissonance happens because different regions of the brain have competing evolutionary drives. Single-prompt LLMs are terrible at holding these contradictions. Because they are trained to write cohesive, logical paragraphs, they will always try to "smooth out" their thoughts to make them mathematically agree.
+In a standard single-prompt LLM, different cognitive domains contaminate each other because the AI is forced to write them in a single, continuous stream of text. 
+*   If the AI starts its thought process by writing about its daily schedule (DMN), those words mathematically bias its neural network, warping its subsequent analysis of the user's hidden lies (Theory of Mind). 
+*   By separating these domains into isolated streams, the **DMN** can worry about its chores, the **Theory of Mind** can analyze social vulnerabilities, and the **Neurochemical Engine** can calculate ego and drives. They all feel the somatic tension (A1), but they process it in their own specialized domains without polluting one another.
 
-By running Agents 2, 3, and 4 in completely isolated parallel streams, we force the AI to generate raw, uncooperative and highly contradictory data. When Agent 5 (the Executive Anterior Cingulate Cortex) gathers this data, it is forced to act like a real human brain: making a messy, flawed choice to resolve the agonizing friction between competing internal voices.
+#### 3. Simulating True Cognitive Dissonance
+Because Agents 2, 3, and 4 process the scene independently, they often produce highly contradictory data. Your Theory of Mind might say *"the user is vulnerable and needs comfort,"* while your Neurochemical Engine says *"my pride is wounded and I want to strike back."*
 
-### 3. Enforcing the "Show, Don't Tell" Firewall (The Social Mask)
-If a single LLM writes both a character's internal thoughts and their external dialogue in one pass, the thoughts will inevitably "bleed" into the dialogue. The character will start acting exactly like they feel, destroying all subtext, mystery, and conversational masking.
+Standard LLMs hate contradiction; they are trained to write cohesive, agreeable paragraphs and will always try to "smooth out" these differences. 
 
-In reality, our external behavior (motor cortex and speech centers) does not broadcast our raw neurochemical soup. Humans are masters of masking. If we feel an meotion, our actions don't necessarily reveal it through subtext like it would happne in a novel. Unless our emotions are very strong, we can hide them. For very emotional and hard situation, there are specific methods I've implemented but they still act  on a different layer than the external actions, affecting it indirectly. Real humans are not characters in a novel.
+By keeping the subconscious agents isolated, we force the AI to generate raw, uncooperative, and highly contradictory data. When Agent 5 (the Executive) gathers this data, it is forced to resolve actual **cognitive dissonance**—making a messy, deeply human decision between competing internal voices.
+
+#### 4. Enforcing the "Show, Don't Tell" Firewall
+If a single LLM writes both the character's internal thoughts and their external dialogue in one pass, the thoughts will inevitably "bleed" into the dialogue. The character will start acting exactly like they feel, destroying all subtext and conversational masking. 
+
+To prevent this, **Agent 6 (the Writer) is kept 100% blind to the thoughts of Agents 1-4.** It only receives the final, physical choreography and dialogue dictated by Agent 5. This strict firewall forces the AI to act like a real movie camera—describing only literal, physical reality and forcing the emotional subtext to be shown, not told.
 
 ---
 
