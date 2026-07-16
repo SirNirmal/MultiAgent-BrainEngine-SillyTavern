@@ -24,7 +24,7 @@ I also wanted to cure the AI's tendency to wait around in a void. Through the De
 
 This breaks the usual AI sycophancy. The characters don't exist just to cater to you; they have a complex inner world and they have somewhere to be. You are simply stepping into a scene in progress.
 
-[DOWNLOAD MultiAgent BrainEngine](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/archive/refs/heads/main.zip)
+**[CLICK TO DOWNLOAD MultiAgent BrainEngine](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/archive/refs/heads/main.zip)**
 
 ---
 
