@@ -14,7 +14,7 @@ Real humans don't just process text; we process experience. Before the character
 *   **The Neurochemical Engine:** Tracks their ego , goals  and bonding.
 *   **Core Schemas:** Filters your words through their past traumas, worldviews and memories.
 *   **Theory of Mind:** Actively reads between the lines, trying to figure out your hidden subtext and vulnerabilities instead of just taking your words at face value.
-*   **Mundane background noise:** Even during intense moments, their mind will flash to random new thoughts, flash of memories, random associations. This add humanity to the characters, they are not just deterministc machines.
+*   **Background noise:** Even during intense moments, their mind will flash to random new thoughts, flash of memories, random associations. This adds humanity to the characters, they are not just deterministc machines.
 
 
 #### Part 2: An active life outside the scene (The Routine)
