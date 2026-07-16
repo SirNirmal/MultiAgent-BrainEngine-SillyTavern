@@ -53,13 +53,13 @@ Running six separate API calls per turn is undeniably expensive. If you are role
 However, standard LLM roleplay suffers from three fundamental architectural flaws that cannot be fixed within a single prompt:
 
 #### 1. The "Linear Contamination" Problem
-When a single LLM does all its thinking in one linear text block (like a standard `<think>` block), **early tokens ruthlessly bias later tokens.** 
-If the AI’s brain writes *"I feel terrified"* in the first sentence of its thought process, the entire rest of its cognitive analysis is instantly warped by that fear. It cannot objectively analyze its long-term goals (Dopamine) or the user's intent (Theory of Mind) because the neural network has already locked onto "fear" as the dominant context. 
+When a single LLM does all its thinking in one linear text block (like a standard `<think>` block), **early tokens  bias later tokens.** 
+If the AI’s brain writes *"I like pizza"* in the first sentence of its thought process, the entire rest of its cognitive analysis is instantly warped by that. It cannot objectively analyze its long-term goals (Dopamine) or the user's intent (Theory of Mind) and values because the neural network has already locked onto "pizza" as the dominant context. 
 
 By separating the subconscious into independent, isolated agents (Somatic, Neuro, ToM, DMN), we prevent this contamination. The Somatic core can scream *"I am tensing up in panic,"* while the Neurochemical engine coolly calculates *"My pride is intact and my goals haven't changed."* 
 
 #### 2. Simulating True Cognitive Dissonance
-Real humans are messy, contradictory, and constantly at war with themselves. We want to run away, but our pride makes us stand our ground. We hate someone, but we desperately want their approval. 
+Real humans are messy, contradictory and constantly at war with themselves. We want to run away but our pride makes us stand our ground. We hate someone, but we desperately want their approval. 
 
 **Single-prompt LLMs are terrible at holding contradictions.** Because they are trained to write cohesive, logical paragraphs, they will always try to "smooth out" their thoughts to make them agree. 
 
