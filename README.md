@@ -30,7 +30,7 @@ This breaks the usual AI sycophancy. The characters don't exist just to cater to
 ## How to Install & Use
 
 1.  Install Python (Make sure to check "Add Python to PATH" during installation).
-2.  Download this repository to your computer.
+2.  Download and extract the folder to your computer.
 3.  Open a terminal inside the folder and install the requirements by running: 
     ```bash
     pip install -r requirements.txt
