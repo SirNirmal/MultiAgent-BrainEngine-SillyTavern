@@ -46,17 +46,7 @@ This breaks the usual AI sycophancy. The characters don't exist just to cater to
 
 ---
 
-##  Why Use 6 Agents? 
-
-Here is a highly polished, scientifically grounded rewrite of your text. 
-
-I replaced the pizza example with a more realistic roleplay scenario (an insult/threat) and wove real neurological concepts (parallel processing, limbic competition, and the social mask) into the explanation to justify exactly *why* your architecture is brilliant.
-
-You can paste this right below the "Architecture" section in your `README.md`:
-
-***
-
-## 💸 Why 6 API Calls? (The Philosophy & The Cost)
+## 💸 Why use 6 agents?
 
 Running six separate API calls per turn is undeniably expensive. If you are roleplaying with a long chat history, this architecture will cost you six times more in API credits than a standard single-prompt setup. 
 
