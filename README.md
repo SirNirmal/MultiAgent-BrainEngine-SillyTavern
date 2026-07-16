@@ -91,7 +91,7 @@ In a standard single-prompt LLM, different cognitive domains contaminate each ot
 *   In a real brain, subconsicous thoughts involve different regions that act simultaneously, not sequentially.
 
 #### 3. Breaking down tasks into smaller parts
-If you tell a sinlge LLM to analyze a situation, generate a reaction, filter it through a character's values, propose actons and generate dialogue you wil get subpare results. LLMs response decrase in quality the more complex their insturctionos are. Breaking down Breaking down the instructions to different agents addresses this issue. Each Agent is focused on a specific task whihc allows them to perform it at their best.
+If you ask a single LLM to analyze a situation, generate the first instintive reaction, filter it through a character's values, think through a plan of action and generate dialogu,e you wil get subpare results. LLMs response quality decrease ithe more complex their instructions are. Breaking down the instructions and distributing them to different and separate agents addresses this issue. Each Agent is focused on a specific task, this allows them to perform it at their best.
 
 #### 4. Enforcing  "show, don't Tell"
 If a single LLM writes both the character's internal thoughts and their external dialogue in one pass, the thoughts will inevitably "bleed" into the dialogue. The character will start acting exactly like they feel, destroying any subtext or masking.
