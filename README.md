@@ -41,7 +41,7 @@ This breaks the usual AI sycophancy. The characters don't exist just to cater to
 9.  ⚠️ **CRITICAL STEP (THE SCRIPT WILL NOT WORK CORRECTLY WITHOUT THIS):**
     *   Click the **Advanced Formatting** tab (the "A" icon on the top menu bar).
     *   Find the **Reasoning** section and turn on **"Add to prompt"**.
-    *   Set the **"Max number of thinking blocks to add"** to **3** (or up to 5 for larger group chats). 
+    *   Set the **"Max number of thinking blocks to add"** to a high number (eg. 100). 
     *   *Why?* The Python backend is hardcoded to parse the last 3 thoughts of the active character. Setting this to 3 in SillyTavern prevents unnecessary token overhead while allowing the memory engine to function.
 
 ---
