@@ -70,7 +70,7 @@ As soon as A1 finishes, the script feeds that bodily data into three other agent
 
 ### Phase 3: The Executive Director
 *   **Agent 5 (Executive Cortex):** Gathers all the independent JSON data from Phases 1 and 2, plus the character's current Cognitive Fatigue. It looks at all the contradictory subconscious data and makes a tactical decision: What is my actual motive? Am I going to speak, or just stay silent? What is my physical choreography?
-    *(If Cognitive Fatigue or Arousal is too high, Agent 5 suffers an "Ego Depletion Hijack" and loses control of their manners).*
+    *(If Cognitive Fatigue or Arousal is are high, Agent 5 first expereinces "Tunnel vision". If levels become too high, Agent 5 suffers  "Ego Depletion Hijack" and loses control of their manners).*
 
 ### Phase 4: The Synthesis (The Camera)
 *   **Agent 6 (Screenwriter):** Takes the final directions from Agent 5 and translates them into macroscopic stage directions, props, proxemics, and punchy dialogue. It is strictly forced to write pure, objective prose without inner narration.
