@@ -6,7 +6,7 @@ If you’ve spent any time doing AI roleplay, you’ve probably noticed what I c
 
 I wanted to change that. 
 
-This project is a Python proxy server that intercepts SillyTavern's prompts and routes them through a 6-agent brain simulation. It divides the character's cognition into two equally important halves: a deep, messy internal world and an active life outside of your conversation.
+This project is a Python proxy server that intercepts SillyTavern's prompts and routes them through a 6-agent brain simulation. It divides the character's cognition into two equally important halves: a deep internal world and an active life outside of your conversation.
 
 #### Part 1: A deep internal world (The Brain)
 Real humans don't just process text; we process experience. Before the character decides what to say, the simulation routes the prompt through their subconscious:
