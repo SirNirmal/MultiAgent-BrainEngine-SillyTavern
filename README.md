@@ -31,8 +31,7 @@ This breaks the usual AI sycophancy. The characters don't exist just to cater to
 
 1.  Install Python (Make sure to check "Add Python to PATH" during installation).
 2.  Download and extract the folder to your computer.
-3. Open a terminal inside the folder (right-click on any empty white space inside the folder and select "Open in Terminal" from the menu).
-   *(Note: A black or blue command window will pop up. If you don't see "Open in Terminal", you can also just click the folder's address bar at the very top, type `cmd`, and press Enter).* 
+3. Open a terminal inside the folde by right-clicking on any empty white space inside the folder and select "Open in Terminal" from the menu. A black or blue command window will pop up. Note: If you don't see "Open in Terminal", you can also just click the folder's address bar at the very top, type `cmd` and press Enter).* 
    Once the terminal is open, install the requirements by typing this, then press Enter: 
    ```bash
    pip install -r requirements.txt
