@@ -14,12 +14,13 @@ Real humans don't just process text; we process experience. Before the character
 *   **The Neurochemical Engine:** Tracks their ego , goals  and bonding.
 *   **Core Schemas:** Filters your words through their past traumas, worldviews and memories.
 *   **Theory of Mind:** Actively reads between the lines, trying to figure out your hidden subtext and vulnerabilities instead of just taking your words at face value.
+*   **Mundane background noise:** Even during intense moments, their mind will flash to random new thoughts, flash of memories, random associations. This add humanity to the characters, they are not just deterministc machines.
+
 
 #### Part 2: An active life outside the scene (The Routine)
 I also wanted to cure the AI's tendency to wait around in a void. Through the Default Mode Network (Agent 4), the character maintains their own daily life:
 *   **A flexible hour-by-hour daily schedule:** The character actually knows what time of day it is. If they are talking to you at 11:30 AM, they know they have family lunch at 12:30 PM, or tutoring at 2:00 PM. If you drag out the conversation, they will eventually have to leave because they have places to go.
 *   **A weekly calendar:** They know what their obligations are tomorrow, on Thursday, or over the weekend.
-*   **Mundane background noise:** Even during intense moments, their mind will flash to random new thoughts, flash of memories, random associations. This add humanity to the characters, they are not just deterministc machines.
 
 This breaks the usual AI sycophancy. The characters don't exist just to cater to you; they have a complex inner world and they have somewhere to be. You are simply stepping into a scene in progress.
 
