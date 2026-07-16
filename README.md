@@ -1,15 +1,27 @@
 # MultiAgent-BrainEngine-SillyTavern
 
-This is a standalone Python proxy server for SillyTavern. Instead of sending your prompt straight to an LLM, this script intercepts the prompt and routes it through a 6-Agent cognitive hierarchy:
+### Stop roleplaying with puppets. Give them a mind and a life.
 
-*   **Somatic Core**: Simulates physical arousal and symptoms.
-*   **Neurochemical Engine**: Tracks dopamine, serotonin, and active schemas.
-*   **Theory of Mind**: Analyzes user intent and power dynamics.
-*   **Default Mode Network (DMN)**: Generates intrusive thoughts and maintains daily/weekly schedules.
-*   **Executive Cortex**: Dictates tactics and conversational intent.
-*   **Synthesis**: Formats everything into a punchy, macroscopic roleplay response.
+If you’ve spent any time doing AI roleplay, you’ve probably noticed what I call the "puppet problem." Most characters exist in a total vacuum. They have zero agency, sitting passively in a blank room, waiting for you to type, and ready to agree with whatever you say. They don't have a complex inner life, and they certainly don't have a schedule. 
 
-It features dual-stream memory, ego-depletion/fatigue tracking, and active background schedules.
+I wanted to change that. 
+
+This project is a Python proxy server that intercepts SillyTavern's prompts and routes them through a 6-agent brain simulation. It divides the character's cognition into two equally important halves: a deep, messy internal world, and an active life outside of your conversation.
+
+#### Part 1: A deep internal world (The Brain)
+Real humans don't just process text; we process experience. Before the character decides what to say, the simulation routes the prompt through their subconscious:
+*   **The Somatic Core:** Calculates their body's physical reflexes first (heart rate, muscle tension, tensing up) because human biology reacts before the conscious mind does.
+*   **The Neurochemical Engine:** Tracks their ego (serotonin), goals (dopamine), and bonding (oxytocin).
+*   **Core Schemas:** Filters your words through their past traumas, worldviews, and memories.
+*   **Theory of Mind:** Actively reads between the lines, trying to figure out your hidden subtext and vulnerabilities instead of just taking your words at face value.
+
+#### Part 2: An active life outside the scene (The Routine)
+I also wanted to cure the AI's tendency to wait around in a void. Through the Default Mode Network (Agent 4), the character maintains their own daily life:
+*   **A strict hour-by-hour daily schedule:** The character actually knows what time of day it is. If they are talking to you at 11:30 AM, they know they have family lunch at 12:30 PM, or tutoring at 2:00 PM. If you drag out the conversation, they will eventually have to leave because they have places to go.
+*   **A weekly calendar:** They know what their obligations are tomorrow, on Thursday, or over the weekend.
+*   **Mundane background noise:** Even during intense moments, their mind will flash to random daily stresses—cleaning a dirty paintbrush, mending a frayed ribbon, or worrying about a sibling.
+
+This breaks the usual AI sycophancy. The characters don't exist just to cater to you; they have a complex inner world, and they have somewhere to be. You are simply stepping into a scene in progress.
 
 ---
 
