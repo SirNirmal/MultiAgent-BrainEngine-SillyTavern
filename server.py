@@ -12,16 +12,32 @@ app = FastAPI()
 # =========================================================
 # CONFIGURATION
 # =========================================================
-# ⚠️ USER: INSERT YOUR API CREDENTIALS AND MODEL HERE ⚠️
+# ⚠️ USER: INSERT YOUR API CREDENTIALS AND MODELS HERE ⚠️
 
+# --- MAIN SETTINGS (Required) ---
 API_KEY = "INSERT_YOUR_API_KEY_HERE" 
-MODEL_NAME = "INSERT_YOUR_MODEL_NAME_HERE"      # e.g., "z-ai/glm-5.2", "gpt-4o", or "meta-llama/llama-3-8b-instruct"
-BASE_URL = "INSERT_YOUR_PROVIDER_URL_HERE"      # e.g., "https://openrouter.ai/api/v1" or "https://api.openai.com/v1"
+MODEL_NAME = "INSERT_YOUR_MODEL_NAME_HERE"      # e.g., "anthropic/claude-3.5-sonnet"
+BASE_URL = "INSERT_YOUR_PROVIDER_URL_HERE"      # e.g., "https://openrouter.ai/api/v1"
 
-client = AsyncOpenAI(
-    base_url=BASE_URL,
-    api_key=API_KEY
-)
+# --- ADVANCED: DUAL-PROVIDER SETUP (Optional, saves money) ---
+# Want to run the backend logic (Agents 1-5) on a cheap or free local model?
+# Put those credentials here. 
+# IF YOU LEAVE THESE BLANK (""), THE SCRIPT WILL JUST USE YOUR MAIN SETTINGS FOR EVERYTHING!
+LOGIC_API_KEY = ""   # e.g., "lm-studio" for local, or an OpenRouter key
+LOGIC_BASE_URL = ""  # e.g., "http://127.0.0.1:1234/v1" for local
+LOGIC_MODEL = ""     # e.g., "qwen/qwen-2.5-72b-instruct"
+
+# =========================================================
+# SMART CLIENT ROUTING (Auto-detects if you are using Dual Setup)
+# =========================================================
+writer_client = AsyncOpenAI(base_url=BASE_URL, api_key=API_KEY)
+
+# Fallback to Main Settings if Advanced Settings are left blank
+active_logic_api = LOGIC_API_KEY if LOGIC_API_KEY.strip() != "" else API_KEY
+active_logic_url = LOGIC_BASE_URL if LOGIC_BASE_URL.strip() != "" else BASE_URL
+ACTIVE_LOGIC_MODEL = LOGIC_MODEL if LOGIC_MODEL.strip() != "" else MODEL_NAME
+
+logic_client = AsyncOpenAI(base_url=active_logic_url, api_key=active_logic_api)
 
 STATE_DB_FILE = "biopsychosocial_state.json"
 state_lock = threading.Lock()  # Added to prevent file corruption from race conditions
@@ -183,9 +199,13 @@ def build_agent_messages(base_messages, agent_prompt, additional_context="", is_
             
     return msgs
 
-async def async_llm_call(system_prompt=None, scene_context=None, full_messages=None, expect_json=True, max_retries=4, temp=0.8, freq_pen=0.0, pres_pen=0.0, max_tokens=2500):
+async def async_llm_call(system_prompt=None, scene_context=None, full_messages=None, expect_json=True, max_retries=4, temp=0.8, freq_pen=0.0, pres_pen=0.0, max_tokens=2500, is_writer=False):
     current_temp = temp 
     
+    # Select the correct client and model based on the agent type!
+    active_client = writer_client if is_writer else logic_client
+    active_model = MODEL_NAME if is_writer else ACTIVE_LOGIC_MODEL
+
     for attempt in range(max_retries):
         try:
             if full_messages is not None:
@@ -198,8 +218,8 @@ async def async_llm_call(system_prompt=None, scene_context=None, full_messages=N
                     {"role": "user", "content": scene_context}
                 ]
 
-            response = await client.chat.completions.create(
-                model=MODEL_NAME,
+            response = await active_client.chat.completions.create(
+                model=active_model,
                 messages=api_messages,
                 temperature=current_temp,
                 frequency_penalty=freq_pen,
@@ -385,7 +405,7 @@ async def chat_completions(request: Request, background_tasks: BackgroundTasks):
         
         for attempt in range(3):
             try:
-                response = await client.chat.completions.create(
+                response = await writer_client.chat.completions.create(
                     model=MODEL_NAME,
                     messages=raw_messages, # Raw messages contain ALL hidden <think> blocks
                     temperature=0.85,
@@ -549,13 +569,15 @@ async def chat_completions(request: Request, background_tasks: BackgroundTasks):
     """
     
     task_6 = build_agent_messages(messages_synth, AGENT_6_SYNTHESIS, additional_context=synthesis_context, is_json=False)
+    
     final_roleplay_text = await async_llm_call(
         full_messages=task_6, 
         expect_json=False, 
         temp=0.85, 
         freq_pen=0.3, 
         pres_pen=0.3,
-        max_tokens=2000
+        max_tokens=2000,
+        is_writer=True 
     )
     
     thought_block = f"<think>\n🩸 Somatic: {valence}, Arousal {arousal}/10\n🧪 Neuro: Emotion [{core_emotion}] | Schema [{schema_trigger}]\n👁️ ToM: Intent [{tom_intent}] | User Subtext [{tom_subtext}]\n🌫️ DMN: {dmn_thought} | Today: {dmn_daily_schedule} | Week: {dmn_weekly_routine}\n⚖️ Exec (Fatigue {fatigue}): Motive [{internal_motive}] | Strategy [{subtext_strategy}]\n🎬 Directing: Speech [{speech_intent}] | Choreo [{physical_choreography}]\n</think>\n\n"
