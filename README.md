@@ -155,6 +155,6 @@ While sending the reply back to SillyTavern, the server runs quick background ta
 ## Known issues
 *   If the API call is rejected for unsafe content by your chosen provider, the Agents will output  placeholders. With less moderated models,  this usually affect only  1 or 2 agents, dialogue is usually always generated. Still, this will  negatively affect the quality of the chat. More censored models may block more agents and dialogue.
 
-*   API Providers with very low rate limits may not work with this script, always check the log you can see in server terminal if you face issues. If you experience rate limits, find another provider with higher rate limits that can accomodate the several calls required to run the multi-agent system.
+*   API providers with very low rate limits may not work with this script, always check the log you can see in server terminal if you face issues. If you experience rate limits, find another provider with higher rate limits that can accomodate the several calls required to run the multi-agent system.
 
 *   The script has been tested using SillyTavern default preset and extensions. Interactions with custom presets and extensions that affect thought and memory processing are unknown.
