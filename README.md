@@ -158,5 +158,3 @@ While sending the reply back to SillyTavern, the server runs quick background ta
 *   API providers with very low rate limits per minute (RPM) may not work with this script, always check the log you can see in server terminal if you face issues. If you experience rate limits, find another provider with higher rate limits per minute that can accomodate the several cascading calls required to run the multi-agent system.
 
 *   The script has been tested using SillyTavern default preset and extensions. Interactions with custom presets and extensions that affect thought and memory processing are unknown.
-
-*   The script often does **not work** with **Kimi models** at the moment. Most other models - including all popular models - work fine.
