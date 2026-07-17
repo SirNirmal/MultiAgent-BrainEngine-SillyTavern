@@ -153,6 +153,8 @@ To prevent characters from reading each other's minds (Telepathy) and to stop th
 While sending the reply back to SillyTavern, the server runs quick background tasks to update the character's conversational fatigue and save their active schedules. It also uses thread-safe locking to ensure multiple characters in a group chat never corrupt your local memory file.
 
 ## Known issues
-If the API call is rejected for unsafe content by your chosen provider, the Agents will output  placeholders. With less moderated models,  this usually affect only  1 or 2 agents, dialogue is usually always generated. Still, this will  negatively affect the quality of the chat. More censored models may block more agents and dialogue.
+*   If the API call is rejected for unsafe content by your chosen provider, the Agents will output  placeholders. With less moderated models,  this usually affect only  1 or 2 agents, dialogue is usually always generated. Still, this will  negatively affect the quality of the chat. More censored models may block more agents and dialogue.
 
-The script has been tested using SillyTavern default preset and extensions. Interactions with custom presets and extensions that affect thought and memory processing are unknown.
+*   Providers with very low rate limits may not work with this script, always check the log you can see in server terminal if you face issues. If you experience rate limits, find another provider with higher rate limits that can accomodate the several calls required to run the multi-agent system.
+
+*   The script has been tested using SillyTavern default preset and extensions. Interactions with custom presets and extensions that affect thought and memory processing are unknown.
