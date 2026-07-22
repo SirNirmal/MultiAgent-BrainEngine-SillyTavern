@@ -1,8 +1,7 @@
+**[CLICK TO DOWNLOAD MultiAgent BrainEngine 2 (ZIP)](https://github.com/DonBananas/MultiAgent-BrainEngine-SillyTavern/archive/refs/heads/main.zip) — then follow the [install guide below](#installation). Requires [SillyTavern](https://github.com/SillyTavern/SillyTavern)**
 # MultiAgent BrainEngine 2
 
 ### Stop roleplaying with puppets. Give them a mind, a memory, and a life.
-
-**[⬇ CLICK TO DOWNLOAD MultiAgent BrainEngine 2 (ZIP)](https://github.com/DonBananas/MultiAgent-BrainEngine-2/archive/refs/heads/main.zip)** — then follow the [install guide below](#installation). Requires [SillyTavern](https://github.com/SillyTavern/SillyTavern) · Windows · MIT license.
 
 MultiAgent BrainEngine 2 is a Python proxy server for SillyTavern. It sits between SillyTavern and your LLM provider, and routes every reply through a **6-agent biopsychosocial brain** — so characters react with their body first, filter the world through their own psychology, read between your lines, maintain their own daily lives, and only then decide what to say and do. **Two more agents work in the background**, quietly keeping the character's diary after every reply.
 
