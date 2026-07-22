@@ -1,0 +1,12 @@
+{
+  "main": {
+    "api_key": "YOUR_API_KEY_HERE",
+    "model": "e.g. anthropic/claude-3.5-sonnet",
+    "base_url": "e.g. https://openrouter.ai/api/v1"
+  },
+  "logic": {
+    "api_key": "OPTIONAL - a cheaper key for the background agents",
+    "model": "e.g. qwen/qwen-2.5-72b-instruct",
+    "base_url": "e.g. http://127.0.0.1:1234/v1"
+  }
+}

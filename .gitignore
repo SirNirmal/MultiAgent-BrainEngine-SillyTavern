@@ -1,0 +1,18 @@
+# ---- NEVER COMMIT THESE: personal secrets & data ----
+
+# API keys and provider settings (created by the setup window)
+engine/config.json
+
+# The characters' diaries, beliefs, scenes — personal roleplay data
+engine/memory.db
+engine/memory.db-journal
+engine/memory.db-wal
+engine/memory.db-shm
+
+# Per-character schedules
+engine/biopsychosocial_state.json
+
+# ---- Python noise ----
+__pycache__/
+*.pyc
+*.pyo
