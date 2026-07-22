@@ -3,7 +3,7 @@
 
 ### Stop roleplaying with puppets. Give them a mind, a memory, and a life.
 
-MultiAgent BrainEngine 2 is a Python proxy server for SillyTavern. It sits between SillyTavern and your LLM provider, and routes every reply through a **6-agent biopsychosocial brain** — so characters react with their body first, filter the world through their own psychology, read between your lines, maintain their own daily lives, and only then decide what to say and do. **Two more agents work in the background**, quietly keeping the character's diary after every reply.
+MultiAgent BrainEngine 2 is a an extremely easy to setup and user-friendly Python proxy server for SillyTavern. It sits between SillyTavern and your LLM provider, and routes every reply through a **6-agent biopsychosocial brain** — so characters react with their body first, filter the world through their own psychology, read between your lines, maintain their own daily lives, and only then decide what to say and do. **Two more agents work in the background**, quietly keeping the character's diary after every reply.
 
 **Eight agents in total: six craft the reply you read, two maintain the memory behind it.**
 
