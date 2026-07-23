@@ -147,7 +147,7 @@ The first six agents run while you wait and produce the reply. The last two run 
 - **Python 3.10+** — during installation, tick **"Add Python to PATH"**
 - **SillyTavern**
 - An **OpenAI-compatible API key** — OpenRouter, any compatible provider, or a local model server (LM Studio, etc.)
-- **Recommended for group chats: [Presence](https://github.com/leandrojofre/SillyTavern-Presence/tree/main)** — a SillyTavern extension that tracks which characters are physically in the room. In group chats, it hides messages a character didn't witness, so the engine only processes what they actually experienced. Use SillyTavern's inbuilt extension installer with this URL:https://github.com/leandrojofre/SillyTavern-Presence
+- **HIGHLY Recommended for group chats: [Presence](https://github.com/leandrojofre/SillyTavern-Presence/tree/main)** — a SillyTavern extension that tracks which characters are physically in the room. In group chats, it hides messages a character didn't witness, so the engine only processes what they actually experienced. Use SillyTavern's inbuilt extension installer with this URL:https://github.com/leandrojofre/SillyTavern-Presence
 
 ### Steps
 
